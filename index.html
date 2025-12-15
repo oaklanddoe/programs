@@ -51,6 +51,36 @@
             display: block;
         }
 
+        /* Container for the footer logos */
+        .logo-footer {
+            margin-top: 40px;          /* Space above the logos */
+            padding-top: 20px;
+            border-top: 1px solid #eee; /* Optional divider line */
+        }
+
+        .logo-footer p {
+            font-weight: bold;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        /* Flexbox to put images side-by-side */
+        .logo-row {
+            display: flex;
+            gap: 60px;                 /* Space between the two logos */
+            align-items: center;       /* Vertically center them */
+            flex-wrap: wrap;           /* Allow wrapping on very small screens */
+            justify-content: center;   /* Centers the images horizontally */
+        }
+
+        /* Individual Logo Sizing */
+        .footer-logo {
+            max-height: 120px;          /* Restrict height so they aren't huge */
+            width: auto;               /* Maintain aspect ratio */
+            display: block;
+        }
+
         /* --- MAIN LAYOUT --- */
         .main-container {
             display: flex;
@@ -950,6 +980,14 @@
                 <!-- <h3>NCAE-C Funding</h3> -->
                 <p>This program was supported by the Department of Energy Office of Cybersecurity, Energy Security, and Emergency Response (CESER) under Award Number(s) DE-CR0000023.</p>
             </div>
+            <div class="logo-footer">
+            <!-- <p>In partnership with:</p> -->
+            <div class="logo-row">
+                <img src="src/Seal_of_the_Department_of_Energy.svg.png" alt="DoE Logo" class="footer-logo">
+                
+                <img src="src/AutomationAlley_ICON-ylw.png" alt="AA Logo" class="footer-logo">
+            </div>
+        </div>
         </article>
 
     </main>
