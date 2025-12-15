@@ -106,7 +106,7 @@
         }
 
         /* Content Card */
-        .program-card {
+        .module-card {
             background: var(--white);
             border: 1px solid var(--border-color);
             border-radius: 8px;
@@ -115,7 +115,7 @@
             display: none; /* Hidden by default */
             animation: fadeIn 0.3s ease-in-out;
         }
-        .program-card.active { display: block; }
+        .module-card.active { display: block; }
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(5px); }
@@ -231,7 +231,7 @@
 
 <header>
     <div class="header-inner">
-        <div class="logo">Engineering Institute</div>
+        <div class="logo">School of Engineering and Computer Science</div>
         <div style="font-size: 0.9rem;">Oakland University</div>
     </div>
 </header>
@@ -239,34 +239,64 @@
 <div class="main-container">
     
     <aside class="sidebar-tabs">
-        <div class="sidebar-title">Select a Program ▼</div>
-        <button class="tab-button active" onclick="openProgram(event, 'p1')">Cybersecurity Best Practices (AISEC-1)</button>
-        <button class="tab-button" onclick="openProgram(event, 'p2')">Intro to Autonomous Vehicle Cyber (AISEC-2)</button>
-        <button class="tab-button" onclick="openProgram(event, 'p3')">Security in AI for Automotive (AISEC-3)</button>
-        <button class="tab-button" onclick="openProgram(event, 'p4')">Security in Autonomous Driving (AISEC-4)</button>
-        <button class="tab-button" onclick="openProgram(event, 'p5')">Vehicle User Authentication (AISEC-5)</button>
+        <div class="sidebar-title">Select a Module ▼</div>
+        <button class="tab-button active" onclick="openProgram(event, 'p1')">Comprehensive Information Security and Penetration Testing</button>
+        <button class="tab-button" onclick="openProgram(event, 'p2')">AI and Machine Learning for Cybersecurity</button>
+        <button class="tab-button" onclick="openProgram(event, 'p3')">Reverse Engineering and Malware Analysis</button>
+        <!-- <button class="tab-button" onclick="openProgram(event, 'p4')">Security in Autonomous Driving (AISEC-4)</button>
+        <button class="tab-button" onclick="openProgram(event, 'p5')">Vehicle User Authentication (AISEC-5)</button> -->
     </aside>
 
     <main class="content-area">
 
-        <article id="p1" class="program-card active">
+        <article id="p1" class="module-card active">
             <div class="card-meta">
-                <span class="ref-tag">REF: AISEC-1</span>
-                <h1 class="program-title">Cybersecurity Best Practices for Autonomous Vehicle Data</h1>
-                <div class="program-lead">LEAD: Sinclair Community College</div>
+                <span class="ref-tag">Module-1</span>
+                <h1 class="program-title">Comprehensive Information Security and Penetration Testing</h1>
+                <div class="program-lead">Instructor: </div>
             </div>
             
             <div class="card-grid">
                 <div>
-                    <h3>Program Overview</h3>
-                    <p>This workshop introduces various cybersecurity best practices related to autonomous vehicle generated or related data. The focus of the course is centered on autonomous ground vehicles, with examples and case studies drawn from a range of mobile robotic devices.</p>
-                    
-                    <h3>Objectives</h3>
-                    <ul>
-                        <li>Identify primary autonomous ground vehicle cybersecurity best practices.</li>
-                        <li>Describe viable autonomous ground vehicle cybersecurity data management approaches.</li>
-                        <li>Explore appropriate actions for protecting data from threats.</li>
-                    </ul>
+                    <h3>Module Overview</h3>
+                    <p>This training course is designed to provide participants with a strong foundation in information security and penetration testing. Participants will learn key concepts in information security, including confidentiality, integrity, availability, and introductory cryptography, as well as practical skills to conduct penetration testing and secure industrial networks.</p>
+                    <h3>Topics</h3>
+                        <p><strong>1. Introduction to Information Security</strong></p>
+                            <ul>
+                                <li>Understanding Information Security Principles</li>
+                                <li>Confidentiality, Integrity, and Availability (CIA Triad)</li>
+                                <li>Basics of Cryptography</li>
+                                <li>Security Policies and Procedures</li>
+                            </ul>
+                        <p><strong>2. Penetration Testing Fundamentals</strong></p>
+                            <ul>
+                                <li>Introduction to Penetration Testing</li>
+                                <li>Types of Penetration Testing</li>
+                                <li>Legal and Ethical Considerations</li>
+                                <li>Penetration Testing Methodology</li>
+                            </ul>
+                        <p><strong>3. Foot-printing, Scanning, and Enumeration</strong></p>
+                            <ul>
+                                <li>Foot-printing and Reconnaissance</li>
+                                <li>Scanning Networks</li>
+                                <li>Enumeration and Information Gathering</li>
+                                <li>Tools for Foot-printing and Scanning</li>
+                            </ul>
+                        <p><strong>4. Identifying and Analyzing System Vulnerabilities</strong></p>
+                            <ul>
+                                <li>Vulnerability Assessment</li>
+                                <li>Vulnerability Scanning Tools</li>
+                                <li>Analyzing Vulnerability Data</li>
+                                <li>Reporting and Prioritizing Vulnerabilities</li>
+                            </ul>
+                        <p><strong>5. System Security Hardening and Intrusion Detection</strong></p>
+                            <ul>
+                                <li>Security Hardening Best Practices</li>
+                                <li>Vulnerability Remediation Techniques</li>
+                                <li>Analyzing System Logs</li>
+                                <li>Network Traffic Analysis for Intrusion Detection</li>
+                            </ul>
+
 
                     <h3>Schedule</h3>
                     <table>
@@ -292,34 +322,76 @@
                     </table>
                 </div>
 
-                <div>
+                <!-- <div>
                     <div class="pricing-box">
                         <div class="price-item"><span>Fast Track:</span> <strong>$595</strong></div>
                         <div class="price-item"><span>Workshop:</span> <strong>$1149</strong></div>
                         <div class="price-item"><span>Module:</span> <strong>$2495</strong></div>
                         <span class="price-highlight">Fully paid by the NCAE-C program, free to you.</span>
-                        <!-- <a href="#" class="btn-register">Pre-Register</a> -->
+                        <a href="#" class="btn-register">Pre-Register</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </article>
 
-        <article id="p2" class="program-card">
+        <article id="p2" class="module-card">
             <div class="card-meta">
-                <span class="ref-tag">REF: AISEC-2</span>
-                <h1 class="program-title">Introduction to Autonomous Ground Vehicle Cybersecurity</h1>
-                <div class="program-lead">LEAD: Sinclair Community College</div>
+                <span class="ref-tag">Module-2</span>
+                <h1 class="program-title">AI and Machine Learning for Cybersecurity</h1>
+                <div class="program-lead">Instructor: </div>
             </div>
             <div class="card-grid">
                 <div>
-                    <h3>Program Overview</h3>
-                    <p>This module explores autonomous vehicle cybersecurity considerations including threats, mitigations, best practices, tools, and resources. Participants should expect to commit 32 hours through an asynchronous online expert facilitated offering.</p>
-                    <h3>Objectives</h3>
-                    <ul>
-                        <li>Identify tools, resources, and education opportunities.</li>
-                        <li>Explore primary AV cybersecurity threats and mitigations.</li>
-                        <li>Define how exemplar organizations can be leveraged.</li>
-                    </ul>
+                    <h3>Module Overview</h3>
+                    <p>This course introduces students to the application of machine learning techniques in modern cybersecurity systems. It covers fundamental machine learning concepts, including supervised, semi-supervised, unsupervised, and reinforcement learning, as well as neural networks and deep learning, with a focus on cybersecurity use cases. Students learn how to select and apply appropriate models for tasks such as malware classification, botnet detection, and intrusion detection.</p>
+                    <p>The course further explores adversarial machine learning, examining attacks on data and models during both training and deployment, along with practical defenses and mitigation strategies. It also addresses generative AI security, secure MLOps practices, and the legal and ethical considerations involved in collecting and using security-related data. Through real-world examples and hands-on exercises, students gain a strong foundation in designing, deploying, and defending machine learning–based cybersecurity solutions for research and industry applications.</p>
+                    <h3>Topics</h3>
+                        <p><strong>1. Foundations of Machine Learning for Cybersecurity</strong></p>
+                            <ul>
+                                <li>Overview of supervised learning models</li>
+                                <li>Logistic regression, Naive Bayes, neural networks, and deep learning</li>
+                                <li>Overview of unsupervised learning models</li>
+                                <li>Principal Component Analysis (PCA), K-means clustering, and Gaussian Mixture Models</li>
+                                <li>Live demonstration: Building an end-to-end machine learning pipeline</li>
+                            </ul>
+                        <p><strong>2. Data-Driven Network and Computer Security</strong></p>
+                            <ul>
+                                <li>Internet architecture and network traffic measurement</li>
+                                <li>Traffic behavior analysis and anomaly detection</li>
+                                <li>Live demonstration: Network traffic analysis using unsupervised learning techniques</li>
+                                <li>Applications of machine learning in network security</li>
+                                    <ul>
+                                        <li>Supervised learning use cases: Spam filtering and phishing detection</li>
+                                        <li>Unsupervised learning use cases: Network anomaly detection</li>
+                                    </ul>
+                            </ul>
+                        <p><strong>3. Machine Learning in Adversarial Environments</strong></p>
+                            <ul>
+                                <li>Introduction to adversarial machine learning and threat modeling</li>
+                                <li>Adversarial manipulation of machine learning systems</li>
+                                    <ul>
+                                        <li>Example: Distorting personalization systems</li>
+                                    </ul>
+                                <li>Defense strategies against adversarial attacks</li>
+                                    <ul>
+                                        <li>Example: Evasion of intrusion and attack detection systems</li>
+                                    </ul>
+                            </ul>
+                        <p><strong>4. Ethics, Fairness, and Responsible AI in Cybersecurity</strong></p>
+                            <ul>
+                                <li>Fairness, transparency, and explainability in cybersecurity ML models</li>
+                                <li>Privacy concepts and practical implementation in industry settings</li>
+                                <li>Externalities and real-world implications of ML errors in cybersecurity</li>
+                                <li>Responsible data collection, usage, and lifecycle management</li>
+                                <li>Hands-on lab: Fraudulent account detection using a virtual case study</li>
+                            </ul>
+                        <p><strong>5. Secure Machine Learning Development and Deployment</strong></p>
+                            <ul>
+                                <li>Secure design principles for ML-based cybersecurity systems</li>
+                                <li>Model validation, deployment, and monitoring considerations</li>
+                                <li>Capstone case study: Real or hypothetical ML-driven cybersecurity deployment</li>
+                                <li>Individualized faculty feedback and strategic guidance</li>
+                            </ul>
                     <h3>Schedule</h3>
                     <table>
                         <thead><tr><th>Start</th><th>End</th><th>Format</th></tr></thead>
@@ -329,34 +401,51 @@
                         </tbody>
                     </table>
                 </div>
-                <div>
+                <!-- <div>
                     <div class="pricing-box">
                         <div class="price-item"><span>Fast Track:</span> <strong>$595</strong></div>
                         <div class="price-item"><span>Workshop:</span> <strong>$1149</strong></div>
                         <div class="price-item"><span>Module:</span> <strong>$2495</strong></div>
                         <span class="price-highlight">Fully paid by the NCAE-C program.</span>
-                        <!-- <a href="#" class="btn-register">Pre-Register</a> -->
+                        <a href="#" class="btn-register">Pre-Register</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </article>
         
-        <article id="p3" class="program-card">
+        <article id="p3" class="module-card">
             <div class="card-meta">
-                <span class="ref-tag">REF: AISEC-3</span>
-                <h1 class="program-title">Security in AI for Automotive Applications</h1>
-                <div class="program-lead">LEAD: Worcester Polytechnic Institute</div>
+                <span class="ref-tag">Module-3</span>
+                <h1 class="program-title">Reverse engineering and Malware Analysis</h1>
+                <div class="program-lead">Instructor: </div>
             </div>
             <div class="card-grid">
                 <div>
-                    <h3>Program Overview</h3>
-                    <p>This training explores the security challenges and solutions in AI for automotive applications. Participants will learn about common security issues in AI systems for autonomous vehicles, including adversarial attacks and data privacy.</p>
-                    <h3>Objectives</h3>
-                    <ul>
-                        <li>Introduce basics of autonomous vehicles and key components.</li>
-                        <li>Describe common security challenges in AI systems.</li>
-                        <li>Analyze vulnerabilities in AI systems.</li>
-                    </ul>
+                    <h3>Module Overview</h3>
+                    <p>This course introduces students to major categories of malicious software that harm users and computer systems, including viruses, Trojan horses, worms, rootkits, scareware, and spyware. The course begins with the fundamentals of reverse engineering and progressively covers advanced attack techniques employed by modern malware. Students will also examine practical countermeasures used in real-world production systems. Through hands-on analysis of real malware samples, the course provides a strong foundation for students interested in cybersecurity research, academia, and industry practice.</p>
+                    <h3>Topics</h3>
+                        <p><strong>1. Principles and Fundamental Concepts</strong></p>
+                            <ul>
+                                <li>Assembly languages and program compilation</li>
+                                <li>Binary code and ELF/PE data representations</li>
+                                <li>Static binary analysis and disassembly</li>
+                                <li>Dynamic execution analysis</li>
+                            </ul>
+                        <p><strong>2. Attacks and Existing Malware</strong></p>
+                            <ul>
+                                <li>Malware behavior (e.g., control flow hijacking)</li>
+                                <li>Anti-reverse engineering and obfuscation</li>
+                                <li>Return-oriented programming</li>
+                                <li>Web-based malware and social engineering</li>
+                            </ul>
+                        <p><strong>3. Analyze vulnerabilities in AI systems.</strong></p>
+                            <ul>
+                                <li>Symbolic execution and taint tracking</li>
+                                <li>Runtime memory forensics</li>
+                                <li>Behavioral detection signatures</li>
+                                <li>Security hardening (ASLR, DEP, and CFI)</li>
+                            </ul>
+
                     <h3>Schedule</h3>
                     <table>
                          <thead><tr><th>Start</th><th>End</th><th>Format</th></tr></thead>
@@ -366,19 +455,19 @@
                          </tbody>
                     </table>
                 </div>
-                <div>
+                <!-- <div>
                     <div class="pricing-box">
                         <div class="price-item"><span>Fast Track:</span> <strong>$595</strong></div>
                         <div class="price-item"><span>Workshop:</span> <strong>$1149</strong></div>
                         <div class="price-item"><span>Module:</span> <strong>$2495</strong></div>
                         <span class="price-highlight">Fully paid by the NCAE-C program.</span>
-                        <!-- <a href="#" class="btn-register">Pre-Register</a> -->
+                        <a href="#" class="btn-register">Pre-Register</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </article>
 
-        <article id="p4" class="program-card">
+        <article id="p4" class="module-card">
             <div class="card-meta">
                 <span class="ref-tag">REF: AISEC-4</span>
                 <h1 class="program-title">Security in Autonomous Driving and Navigation</h1>
@@ -414,7 +503,7 @@
             </div>
         </article>
 
-        <article id="p5" class="program-card">
+        <article id="p5" class="module-card">
             <div class="card-meta">
                 <span class="ref-tag">REF: AISEC-5</span>
                 <h1 class="program-title">Vehicle User Authentication</h1>
@@ -456,7 +545,7 @@
 <script>
     function openProgram(evt, programId) {
         // 1. Hide all tab content
-        var cards = document.getElementsByClassName("program-card");
+        var cards = document.getElementsByClassName("module-card");
         for (var i = 0; i < cards.length; i++) {
             cards[i].classList.remove("active");
         }
